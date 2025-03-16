@@ -1,0 +1,480 @@
+body {
+  background-color: #f5f5f5;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background: url("../images/TUMAINI MOVIN_46.JPG") no-repeat center
+    center/cover;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+
+header .logo img {
+  width: 50px;
+  height: 50px;
+}
+
+header .logo h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+header nav ul li {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.contact-btn {
+  border: 2px solid #fff;
+  padding: 0.5rem 1rem;
+}
+
+.donate-btn {
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #3c1935;
+  padding: 0.5rem 1rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh !important;
+  position: relative;
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+.hero img {
+  width: 199%;
+  height: 199%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero .hero-content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 var(--lr-padding);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero .hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.hero .hero-content p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+
+section {
+  padding: 4rem var(--lr-padding);
+  display: flex;
+  gap: 0.8rem;
+
+  flex-direction: row;
+}
+
+.about {
+  height: 70vh;
+  background: #fff;
+  justify-content: space-between;
+}
+
+.about .sect-info {
+  flex-direction: column;
+  display: flex;
+  width: 48%;
+  height: 100%;
+}
+
+.about .sect-img {
+  width: 48%;
+  height: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.about .sect-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.phrase {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: purple;
+}
+
+.sect-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin: 0.5rem 0 0;
+}
+
+.sect-desc {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #555;
+  margin: 0.5rem 0 0;
+}
+
+.sect-link {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #555;
+  text-decoration: underline;
+  margin-top: 1rem;
+}
+
+.sect-link:hover {
+  color: #000;
+}
+
+.projects-sect {
+  flex-direction: column;
+  background-color: #000;
+  background: url("../images/ART445.jpg") no-repeat center center/cover;
+  color: #fff;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.projects .phrase.blueviolet {
+  color: blueviolet !important;
+}
+
+.projects .sect-title.white {
+  color: #fff !important;
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 49%;
+  height: 350px;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  gap: 10px;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #f5f5f5;
+}
+
+.project-desc {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #f5f5f5;
+}
+
+.project-link {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #f5f5f5;
+  text-decoration: underline;
+}
+
+.latest-updates {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #fff;
+  color: #fff !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.latests {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.latest-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 48%;
+  height: 400px;
+  border-radius: 0.3rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.latest-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.latest-card .latest-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.latest-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: purple;
+  text-decoration-thickness: 4px;
+  text-decoration-style: solid;
+}
+
+.latest-desc {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.latest-link {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: underline;
+  margin-top: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 50%;
+  margin: 1rem 0 0.4rem;
+}
+
+form input,
+form textarea,
+form select {
+  padding: 0.5rem;
+  border: 1px solid #333;
+  font-size: 1.1rem;
+  width: 100%;
+  display: block;
+}
+
+form button {
+  padding: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.countdown {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: unset;
+  background: rgba(0, 0, 0, 0.3);
+  height: 90vh;
+  position: relative;
+}
+
+.countdown::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/TUMAINI\ MOVIN_25.JPG") no-repeat center
+    center/cover;
+  backdrop-filter: blur(10px);
+  z-index: -1;
+}
+
+.countdown * {
+  color: #fff;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  justify-content: space-around;
+  width: 90%;
+  max-width: 800px;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 1rem;
+  color: #fff !important;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.countdown-number {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #fff !important;
+}
+
+.countdown-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff !important;
+}
+.contact-sect {
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+.contact-parts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact-part {
+  width: 46%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-part form {
+  width: 100%;
+}
+
+.contact-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+textarea {
+  resize: none;
+  height: 130px;
+}
+
+.contact-card {
+  /* background: #d0d0d5; */
+  background: url("../images/ART445.jpg") no-repeat center center/cover;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+
+.contact-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.contact-title:not(:first-child) {
+  margin-top: 20px;
+}
+
+.contact-desc {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: 5px 0;
+}
+.contact-desc:has(i) {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-desc i {
+  font-size: 2rem;
+  color: #48aae6;
+}
+
+
+@media (max-width: 1200px) {
+  :root {
+    --lr-padding: 3rem;
+  }
+
+  header {
+    padding: 1rem var(--lr-padding);
+  }
+}

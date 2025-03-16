@@ -1,0 +1,97 @@
+body {
+  background: #000;
+  color: #fff;
+  counter-reset: pg-count;
+}
+section {
+  padding: 4rem var(--lr-padding);
+  display: flex;
+  gap: 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-banner {
+  display: flex;
+  align-items: flex-end;
+  height: 60vh;
+  background: url("../images/TUMAINI\ MOVIN_46.JPG") no-repeat center
+    center/cover;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin: 3rem 0 1rem;
+  border-radius: 1rem;
+}
+
+h1.sect-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.project {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #fff;
+}
+
+.project-desc {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  counter-increment: pg-count;
+}
+
+.project-title::before {
+  content: counter(pg-count);
+  font-size: 4rem;
+}
+
+.project-subtitle {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pg-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+.pg-list li {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.pg-list li img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin: 0 10px;
+  float: left;
+  border-radius: 10px;
+}
+
+.pg-list li blockquote {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.program-img {
+  width: 80%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+footer {
+  border-top: 1px solid #fff;
+}
