@@ -5,33 +5,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/main.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>ULAVi</title>
 </head>
 
 <body>
-  <header>
+  <header class="transparent">
     <a class="logo" href="index.html">
-      <img src="images/LOGO.png" alt="ULAVi logo">
+      <img src="images/ulavi_logo.png" alt="ULAVi logo">
       <h1>ULAVi</h1>
     </a>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Volunteer</a></li>
-        <li><a href="#" class="contact-btn">Contact</a></li>
-        <li><a href="#" class="donate-btn">Donate</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/projects.html">Projects</a></li>
+        <li><a href="https://ulaviarts.blogspot.com">Blog</a></li>
+        <li><a href="#contact-sect" class="contact-btn">Contact</a></li>
+        <li><a href="#" class="header-btn">Get Involved</a></li>
       </ul>
     </nav>
   </header>
+  <script>
+   // Select the header element
+const header = document.querySelector('header');
+
+// Function to handle scroll event
+function handleScroll() {
+  if (window.scrollY > window.innerHeight) {
+    header.classList.remove('transparent');
+  } else {
+    header.classList.add('transparent');
+  }
+}
+
+// Attach scroll event listener
+window.addEventListener('scroll', handleScroll);
+
+  </script>
   <section class="hero">
-    <img src="images/TUMAINI MOVIN_46.JPG" alt="SevenOmore perfoming at TUMAINI MOVIN MINDS" />
+    <!-- <img src="images/TUMAINI MOVIN_46.JPG" alt="SevenOmore perfoming at TUMAINI MOVIN MINDS" /> -->
     <div class="hero-content">
-      <img src='images/LOGO.png' alt='ULAVi logo' style='width: 100px; height: 100px;'>
-      <!-- <h2 class="phrase" style='font-size: 1.2rem; color: #fff'>Urban Links Art Village (ULAVi)</h2> -->
+      <img src='images/ulavi_logo.png' alt='ULAVi logo' style='width: 100px; height: 100px;'>
+     
       <h1>Urban Links Art Village (ULAVi)</h1>
       <p>Unleash the power of creativity with us</p>
       <a href="#" class="btn">Get in touch</a>
@@ -48,16 +65,16 @@
             artistic excellence, advocating for cultural preservation, and enabling communities to harness creativity
             for social and economic progress in Lilongwe, Malawi.
           </p>
-          <a href="" class="sect-link">Learn more</a>
+          <a href="pages/about.html" class="sect-link">Learn more</a>
     </div>
     <div class="sect-img">
       <img src="images/TUMAINI MOVIN_25.JPG" loading="lazy" alt="ULAVi artists at work" />
     </div>
 
   </section>
-  <section class="services-sect">
+  <section class="projects-sect">
     <h2 class="phrase" style="color: rebeccapurple">Creative works</h2>
-    <h3 class="sect-title" style="color: white">Our services</h3>
+    <h3 class="sect-title" style="color: white">Current projects</h3>
     <p class="sect-desc" style="color: #dfdbdb;">
       ULAVi’s projects are designed to empower Malawi’s creative community and provide artists with the tools they need
       to
@@ -65,52 +82,52 @@
       with
       audiences and each other.
     </p>
-    <div class="services">
-      <div class="service-card">
-        <img src="images/TUMAINI MOVIN_46.JPG" class="service-img" alt="ULAVi artists at work" />
-        <div class='service-content'>
-          <h3 class="service-title">Art Farming</h3>
-          <p class="service-desc">
+    <div class="projects">
+      <div class="project-card">
+        <img src="images/img1.jpg" class="project-img" alt="ULAVi artists at work" />
+        <div class='project-content'>
+          <h3 class="project-title">Art Farming</h3>
+          <p class="project-desc">
             ULAVi’s Art Farming aims at empowering Malawi’s creative community by providing artists with the tools they
             need
           </p>
-          <a href="" class="service-link">Learn more</a>
+          <a href="" class="project-link">Learn more</a>
         </div>
 
       </div>
-      <div class="service-card">
-        <img src="images/TUMAINI MOVIN_18.JPG" class="service-img" alt="ULAVi artists at work" />
-        <div class="service-content">
-          <h3 class="service-title">Digital Art Platform</h3>
-          <p class="service-desc">
+      <div class="project-card">
+        <img src="images/urbanlinksmalawi_5.jpg" class="project-img" alt="ULAVi artists at work" />
+        <div class="project-content">
+          <h3 class="project-title">Digital Art Platform</h3>
+          <p class="project-desc">
             ULAVi’s Digital Art Platform is a space for artists to showcase their work and connect with a global
             audience.
           </p>
-          <a href="" class="service-link">Learn more</a>
+          <a href="" class="project-link">Learn more</a>
         </div>
 
       </div>
-      <div class="service-card">
-        <img src="images/TUMAINI MOVIN_25.JPG" class="service-img" alt="ULAVi artists at work" />
-        <div class="service-content">
-          <h3 class="service-title">Art Law Initiative </h3>
-          <p class="service-desc">
+      <div class="project-card">
+        <img src="images/TUMAINI MOVIN_25.JPG" class="project-img" alt="ULAVi artists at work" />
+        <div class="project-content">
+          <h3 class="project-title">Art Law Initiative </h3>
+          <p class="project-desc">
             The Art Law Initiative at ULAVi is dedicated to protecting the
             rights of artists and creative professionals in Malawi.
           </p>
-          <a href="" class="service-link">Learn more</a>
+          <a href="" class="project-link">Learn more</a>
         </div>
 
       </div>
-      <div class="service-card">
-        <img src="images/TUMAINI MOVIN_23.JPG" class="service-img" alt="ULAVi artists at work" />
-        <div class="service-content">
-          <h3 class="service-title">Cultural preservation program </h3>
-          <p class="service-desc">
+      <div class="project-card">
+        <img src="images/ulavi_culture.jpg" class="project-img" alt="ULAVi artists at work" />
+        <div class="project-content">
+          <h3 class="project-title">Cultural preservation program </h3>
+          <p class="project-desc">
             The Cultural Preservation Program is dedicated to safeguarding Malawi’s artistic heritage through education
             and community engagement.
           </p>
-          <a href="" class="service-link">Learn more</a>
+          <a href="" class="project-link">Learn more</a>
         </div>
 
       </div>
@@ -126,13 +143,12 @@
       <div class="latest-card">
         <img src="images/TUMAINI MOVIN_18.JPG" alt="">
         <div class="latest-info">
-          <h3 class="latest-title">ULAVi’s Digital Art Platform connects artists with a global audience</h3>
+          <h3 class="latest-title">SevenOmore Set to Launch Sophomore Music Album on urbanlinksmalawi.com
+            - March 14, 2025</h3>
           <p class="latest-desc">
-            ULAVi’s Digital Art Platform is a space for artists to showcase their work and connect with a global
-            audience.
-            Learn more about how we’re empowering Malawi’s creative community.
+            Malawian music enthusiasts, rejoice! Rising star Sevenomore is thrilled to announce the launch of his highly anticipated debut music album, exclusively on Urban Links Malawi website!.
           </p>
-          <a href="" class="latest-link">Read more</a>
+          <a href="https://ulaviarts.blogspot.com/2025/03/sevenomore-set-to-launch-debut-music.html" class="latest-link">Read more</a>
         </div>
       </div>
       <div class="latest-card">
@@ -146,7 +162,7 @@
           <input type="email" placeholder="Enter your email" />
           <button type="submit">Sign up</button>
         </form>
-        <a href="" class="sect-link">See all updates</a>
+        <a href="https://ulaviarts.blogspot.com" class="sect-link" target="_blank">See all updates</a>
       </div>
     </div>
 
@@ -210,7 +226,7 @@
         }, 1000);
       </script>
   </section>
-  <section class="contact-sect">
+  <section class="contact-sect" id="contact-sect">
     <h2 class="phrase">Get in touch</h2>
     <h3 class="sect-title">Connect with our creative community</h3>
     <p class="sect-desc" style="max-width: 600px;">
@@ -253,22 +269,10 @@
           </p>
           <h3 class="contact-title">Hours</h3>
           <p class="contact-desc">Monday - Friday: 9am - 5pm</p>
-          <!-- <p class="contact-desc">Tuesday: 9am - 5pm</p>
-          <p class="contact-desc">Wednesday: 9am - 5pm</p>
-          <p class="contact-desc">Thursday: 9am - 5pm</p>
-          <p class="contact-desc">Friday: 9am - 5pm</p> -->
+          
           <p class="contact-desc">Saturday: 10am - 4pm</p>
           <p class="contact-desc">Sunday: Closed</p>
-          <h3 class="contact-title">Follow us</h3>
-          <p class='social-icons contact-desc'>
-            <a href=""><i class='bx bxl-blogger'></i></a>
-            <a href=""><i class='bx bxl-facebook'></i></a>
-            <a href=""><i class='bx bxl-whatsapp'></i></a>
-            <a href=""><i class='bx bxl-instagram'></i></a>
-            <a href=""><i class='bx bxl-twitter'></i></a>
-            <a href=""><i class='bx bxl-youtube'></i></a>
-
-          </p>
+         
         </div>
       </div>
       <script>
@@ -286,10 +290,56 @@
         contactCard.style.minHeight = `${formHeight}px`;
       </script>
   </section>
-  <footer>
-    <h2>Urban Links Arts Malawi</h2>
-    <p>Empowering Malawi’s creative community</p>
-  </footer>
+ <footer>
+    <div class="footer-logo">
+      <img src="images/ulavi_logo.png" alt="ULAVi logo">
+      <h1>Urbank Link Arts Village - ULAVi</h1>
+    </div>
+    <p class="footer-desc">
+      Urban Links Arts Village (ULAVi) is a registered non-profit organization founded in 2016, dedicated to
+      empowering and uniting Malawi’s
+      creative community. Through transformative initiatives like Art Farming and a digital art platform, ULAVi
+      provides artists with the tools they need to thrive.
+    </p>
+ <div class="footer-container">
+  <div class="footer-nav">
+    <h3 class="footer-title">Quick links</h3>
+    <ul >
+     <li><a href="pages/about.html">About</a></li>
+     <li><a href="">Projects</a></li>
+     <li><a href="">Get Involved</a></li>
+  
+    </ul>
+  </div>
+  <div class="footer-xternal-links">
+    <h3 class="footer-title">Urban Links Malawi</h3>
+    <ul>
+     <li><a href='http://www.urbanlinksmalawi.com' target="_blank">Visit</li>
+     <li><a href="">Advertise</a></li>
+     <li><a href="">Support</a></li>
+    </ul>
+  </div>
+  <div class="footer-contact">
+    <h3 class="footer-title">Contact</h3>
+    <p><i class="bx bx-envelope"></i>ulaviarts@gamil.com</p>
+    <p><i class="bx bx-phone"></i>+265 999 999 999 <br> +265 888 888 888</p>
+    <p><i class="bx bx-map"></i>Area 49, Dubai <br> Lilongwe, Malawi</p>
+  </div>
+ </div>
+ <div class="footer-social-links">
+  <a href="https://ulaviarts.blogspot.com" target="_blank"><i class='bx bxl-blogger'></i></a>
+  <a href="" target="_blank"><i class='bx bxl-facebook'></i></a>
+  <a href="" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+  <a href="" target="_blank"><i class='bx bxl-instagram'></i></a>
+  <a href="" target="_blank"><i class='bx bxl-twitter'></i></a>
+  <a href="" target="_blank"><i class='bx bxl-youtube'></i></a>
+ </div>
+ <p class="copy">&copy; ULAVi <span id="current-year"></span>. All right reserved</p>
+ <script>
+  const currentYear = new Date().getFullYear();
+  document.getElementById('current-year').textContent = currentYear;
+ </script>
+ </footer>
   <script src="scripts/script.js"></script>
 </body>
 

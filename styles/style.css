@@ -1,44 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-
-:root {
-  --lr-padding: calc((100vw - 1200px) / 2);
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Outfit", sans-serif;
-}
-
 body {
   background-color: #f5f5f5;
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+  background: url("../images/TUMAINI MOVIN_46.JPG") no-repeat center
+    center/cover;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem var(--lr-padding);
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid #222;
-}
-
-header .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  height: 100%;
-  text-decoration: none;
-}
 
 header .logo img {
   width: 50px;
@@ -48,7 +19,7 @@ header .logo img {
 header .logo h1 {
   font-size: 1.5rem;
   font-weight: 900;
-  color: #333;
+  color: #fff;
 }
 
 header nav ul {
@@ -66,7 +37,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #333;
+  color: #fff;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
@@ -75,14 +46,14 @@ header nav ul li a {
 }
 
 .contact-btn {
-  border: 2px solid #333;
+  border: 2px solid #fff;
   padding: 0.5rem 1rem;
 }
 
 .donate-btn {
-  border: 2px solid #333;
-  background-color: #333;
-  color: #fff;
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #3c1935;
   padding: 0.5rem 1rem;
 }
 
@@ -119,7 +90,7 @@ header nav ul li a {
 
 .hero .hero-content h1 {
   font-size: 3.5rem;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .hero .hero-content p {
@@ -127,22 +98,7 @@ header nav ul li a {
   font-weight: 500;
 }
 
-.btn {
-  display: inline-block;
-  padding: 1rem 1.5rem;
-  background-color: #fff;
-  color: #333;
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-weight: 600;
-  border: 2px solid #fff;
-  transition: all 0.1s;
-}
 
-.btn:hover {
-  background-color: #333;
-  color: #fff;
-}
 
 section {
   padding: 4rem var(--lr-padding);
@@ -213,29 +169,29 @@ section {
   color: #000;
 }
 
-.services-sect {
+.projects-sect {
   flex-direction: column;
   background-color: #000;
   background: url("../images/ART445.jpg") no-repeat center center/cover;
   color: #fff;
 }
 
-.services {
+.projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;
 }
 
-.services .phrase.blueviolet {
+.projects .phrase.blueviolet {
   color: blueviolet !important;
 }
 
-.services .sect-title.white {
+.projects .sect-title.white {
   color: #fff !important;
 }
 
-.service-card {
+.project-card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -248,14 +204,14 @@ section {
   overflow: hidden;
 }
 
-.service-card img {
+.project-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-.service-content {
+.project-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -269,20 +225,20 @@ section {
   gap: 10px;
 }
 
-.service-title {
+.project-title {
   font-size: 1.2rem;
   text-transform: capitalize;
   font-weight: 600;
   color: #f5f5f5;
 }
 
-.service-desc {
+.project-desc {
   font-size: 1rem;
   font-weight: 500;
   color: #f5f5f5;
 }
 
-.service-link {
+.project-link {
   font-size: 1rem;
   font-weight: 300;
   color: #f5f5f5;
@@ -450,6 +406,7 @@ form button {
 }
 .contact-sect {
   flex-direction: column;
+  background-color: #f5f5f5;
 }
 .contact-parts {
   display: flex;
@@ -511,150 +468,13 @@ textarea {
   color: #48aae6;
 }
 
-.social-icons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 6px;
-  padding: 1rem;
-}
-.social-icons a {
-  font-size: 1.3rem;
-  font-weight: 500;
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-}
 
-.social-icons a i {
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: #48aae6;
-  transition: all 0.3s ease;
-}
-.social-icons a i:hover {
-  color: #e6f1f8;
-}
-
-@gmedia (max-width: 1500px) {
+@media (max-width: 1200px) {
   :root {
-    --lr-padding: 4rem;
+    --lr-padding: 3rem;
   }
 
   header {
     padding: 1rem var(--lr-padding);
-  }
-
-  header .logo h1 {
-    font-size: 1.2rem;
-  }
-
-  header nav ul {
-    gap: 1rem;
-  }
-
-  header nav ul li a {
-    font-size: 0.9rem;
-  }
-
-  .hero .hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero .hero-content p {
-    font-size: 1.2rem;
-  }
-
-  section {
-    padding: 2rem var(--lr-padding);
-  }
-
-  .about .sect-info,
-  .about .sect-img {
-    width: 100%;
-  }
-
-  .about .sect-img {
-    height: 300px;
-  }
-
-  .sect-title {
-    font-size: 1.5rem;
-  }
-
-  .sect-desc {
-    font-size: 1rem;
-  }
-
-  .services .service-card {
-    width: 100%;
-  }
-
-  .services .service-card img {
-    height: 200px;
-  }
-
-  .service-content {
-    padding: 5px;
-  }
-
-  .service-title {
-    font-size: 1rem;
-  }
-
-  .service-desc {
-    font-size: 0.9rem;
-  }
-
-  .latest-updates {
-    padding: 2rem var(--lr-padding);
-  }
-
-  .latest-card {
-    height: 300px;
-  }
-
-  .latest-card img {
-    height: 200px;
-  }
-
-  .latest-card .latest-info {
-    padding: 5px;
-  }
-
-  .latest-title {
-    font-size: 1rem;
-  }
-
-  .latest-desc {
-    font-size: 0.9rem;
-  }
-
-  .countdown {
-    height: 70vh;
-  }
-
-  .countdown-timer {
-    padding: 0.5rem;
-  }
-
-  .countdown-number {
-    font-size: 3rem;
-  }
-
-  .countdown-text {
-    font-size: 1rem;
-  }
-
-  .contact-parts {
-    gap: 1rem;
-  }
-
-  .contact-part {
-    width: 100%;
-  }
-
-  .contact-part form {
-    width: 100%;
   }
 }
