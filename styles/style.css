@@ -10,46 +10,6 @@ body {
   background-position: center;
 }
 
-
-header .logo img {
-  width: 50px;
-  height: 50px;
-}
-
-header .logo h1 {
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: #fff;
-}
-
-header nav ul {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  height: 100%;
-}
-
-header nav ul li {
-  list-style: none;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-}
-
-.contact-btn {
-  border: 2px solid #fff;
-  padding: 0.5rem 1rem;
-}
-
 .donate-btn {
   border: 2px solid #fff;
   background-color: #fff;
@@ -65,13 +25,6 @@ header nav ul li a {
   position: relative;
   overflow: hidden;
   padding: 0 !important;
-}
-
-.hero img {
-  width: 199%;
-  height: 199%;
-  object-fit: cover;
-  object-position: center;
 }
 
 .hero .hero-content {
@@ -98,13 +51,10 @@ header nav ul li a {
   font-weight: 500;
 }
 
-
-
 section {
   padding: 4rem var(--lr-padding);
   display: flex;
   gap: 0.8rem;
-
   flex-direction: row;
 }
 
@@ -213,14 +163,13 @@ section {
 
 .project-content {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.7);
   padding: 10px;
   gap: 10px;
 }
@@ -370,6 +319,7 @@ form button {
 
 .countdown * {
   color: #fff;
+  text-align: center;
 }
 
 .countdown-timer {
@@ -468,13 +418,118 @@ textarea {
   color: #48aae6;
 }
 
-
-@media (max-width: 1200px) {
-  :root {
-    --lr-padding: 3rem;
+@media (max-width: 1000px) {
+  .hero .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 500;
   }
 
-  header {
-    padding: 1rem var(--lr-padding);
+  .hero .hero-content p {
+    font-size: 1.3rem;
+    font-weight: 400;
   }
+
+  .sect-title {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .sect-desc {
+    font-size: 1.1rem;
+  }
+  .projects {
+    gap: 0.7rem;
+  }
+  .project-card {
+    width: 49%;
+  }
+
+  .latest-updates {
+    height: fit-content;
+  }
+
+  .latests {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .latest-card {
+    width: 100%;
+    height: 40%;
+  }
+  .latest-card form {
+    width: 100%;
+  }
+
+  .countdown-number {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .countdown-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .contact-parts {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-part {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero .hero-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  section {
+    flex-direction: column;
+  }
+
+  .sect-desc {
+    font-size: 1.2rem;
+  }
+  
+.about {
+  height: auto;
+ gap: 1rem;
+}
+
+.about .sect-info {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.about .sect-img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.projects{
+  flex-direction: column;
+}
+.project-card{
+  width: 100%;
+  height: 400px;
+}
+
+.latest-title{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.latest-desc{
+  font-weight: 300;
+}
+
+.contact-part{
+  width: 100%;
+}
+
 }

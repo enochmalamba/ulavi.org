@@ -6,17 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="stylesheet" href="styles/main.css">
+  <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material%20Symbols%20Outlined"
+/>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>ULAVi</title>
 </head>
 
 <body>
-  <header class="transparent">
-    <a class="logo" href="index.html">
-      <img src="images/ulavi_logo.png" alt="ULAVi logo">
-      <h1>ULAVi</h1>
-    </a>
-    <nav>
+  <header class="transparent" id="header">
+    <div class="logo">
+      <span id="open-menu-btn" class="material-symbols-outlined">
+        menu
+        </span>
+      <span id="cls-menu-btn" class="material-symbols-outlined">
+        close
+        </span>
+      <a class="logo" href="index.html">
+        <img src="images/ulavi_logo.png" alt="ULAVi logo">
+        <h1>ULAVi</h1>
+      </a>
+    </div>
+    
+    <nav id="nav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="pages/about.html">About</a></li>
@@ -26,24 +39,13 @@
         <li><a href="#" class="header-btn">Get Involved</a></li>
       </ul>
     </nav>
+    <div class="min-nav">
+      <a href="#contact-sect" class="contact-btn">Contact</a>
+      <a href="" class="header-btn">Get Involved</a>
+    </div>
+    
   </header>
-  <script>
-   // Select the header element
-const header = document.querySelector('header');
 
-// Function to handle scroll event
-function handleScroll() {
-  if (window.scrollY > window.innerHeight) {
-    header.classList.remove('transparent');
-  } else {
-    header.classList.add('transparent');
-  }
-}
-
-// Attach scroll event listener
-window.addEventListener('scroll', handleScroll);
-
-  </script>
   <section class="hero">
     <!-- <img src="images/TUMAINI MOVIN_46.JPG" alt="SevenOmore perfoming at TUMAINI MOVIN MINDS" /> -->
     <div class="hero-content">
@@ -340,7 +342,6 @@ window.addEventListener('scroll', handleScroll);
   document.getElementById('current-year').textContent = currentYear;
  </script>
  </footer>
-  <script src="scripts/script.js"></script>
+  <script src="index.js"></script>
 </body>
-
 </html>

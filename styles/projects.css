@@ -95,3 +95,47 @@ h1.sect-title {
 footer {
   border-top: 1px solid #fff;
 }
+
+@media (max-width: 800px) {
+  .project-banner {
+    height: 40vh;
+  }
+
+  .project-heading {
+    font-size: 2rem;
+  }
+
+  .project-desc {
+    font-size: 1.1rem;
+    text-justify: inter-word;
+  }
+  .project-title {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .project-title::before {
+    font-size: 3rem;
+  }
+
+  .project-subtitle {
+    font-size: 1.5rem;
+  }
+  .pg-list {
+    padding: 0 0.5rem;
+  }
+
+  .pg-list li {
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pg-list li img {
+    float: unset;
+    display: block;
+    margin: 0 auto 10px;
+    width: 100%;
+    height: 250px;
+  }
+}

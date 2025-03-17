@@ -6,26 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../styles/main.css" />
   <link rel="stylesheet" href="../styles/about.css" />
+  <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material%20Symbols%20Outlined"
+/>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>ULAVi ~ About</title>
 </head>
 
 <body style="background: black">
-  <header class="transparent">
-    <a class="logo" href="../index.html">
-      <img src="../images/ulavi_logo.png" alt="ULAVi logo" />
-      <h1>ULAVi</h1>
-    </a>
-    <nav>
+  <header class="transparent" id="header">
+    <div class="logo">
+      <span id="open-menu-btn" class="material-symbols-outlined">
+        menu
+        </span>
+      <span id="cls-menu-btn" class="material-symbols-outlined">
+        close
+        </span>
+      <a class="logo" href="index.html">
+        <img src="../images/ulavi_logo.png" alt="ULAVi logo">
+        <h1>ULAVi</h1>
+      </a>
+    </div>
+    
+    <nav id="nav">
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./projects.html">Projects</a></li>
         <li><a href="https://ulaviarts.blogspot.com">Blog</a></li>
-        <!-- <li><a href="#" class="contact-btn">Contact</a></li> -->
         <li><a href="#" class="header-btn">Get Involved</a></li>
       </ul>
     </nav>
+    <div class="min-nav">
+      <a href="#contact-sect" class="contact-btn">Contact</a>
+      <a href="" class="header-btn">Get Involved</a>
+    </div>
+    
   </header>
 
   <section class="about-section">
@@ -199,6 +216,7 @@
   const currentYear = new Date().getFullYear();
   document.getElementById('current-year').textContent = currentYear;
  </script>
+ <script src="../index.js"></script>
  </footer>
 </body>
 
