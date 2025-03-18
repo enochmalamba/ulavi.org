@@ -103,3 +103,28 @@ section {
 footer {
   border-top: 1px solid #fff;
 }
+
+@media (max-width: 800px) {
+  .about-banner {
+    height: 40vh;
+  }
+
+  .about-heading {
+    font-size: 2rem;
+  }
+
+  .about-us-text {
+    font-size: 1.1rem;
+    text-justify: inter-word;
+    margin-bottom: 1rem;
+  }
+
+  .about-us-text.sml,
+  .abu-min ul li {
+    font-size: 1rem;
+  }
+
+  .abu-min-container{
+    flex-direction: column;
+  }
+}
